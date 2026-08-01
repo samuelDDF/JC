@@ -1,0 +1,7 @@
+Una variable es un dato o una informacion 
+la cual tiene un valor mutable en mitad de la ejecucion del codigo
+es decir, no necesarimente mantiene el mismo valor a lo largo del codigo
+
+Ejemplo:
+edad = 19
+nombre= Samuel

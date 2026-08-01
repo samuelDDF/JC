@@ -1,0 +1,8 @@
+La inteligencia artificial puede ayudar a un desarrollador principiante actuando 
+como un mentor disponible en todo momento. Explica conceptos básicos de programación 
+con ejemplos claros, genera fragmentos de código adaptados al nivel del estudiante, 
+detecta y corrige errores comunes, sugiere optimizaciones para mejorar el rendimiento y 
+propone proyectos prácticos para aplicar lo aprendido. En la práctica, esto significa 
+que el principiante avanza más rápido, entiende mejor los fundamentos y evita frustraciones, 
+porque la IA le ofrece guía, corrección y motivación constante, funcionando como un 
+profesor que acompaña cada paso del proceso de aprendizaje.

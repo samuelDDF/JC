@@ -1,0 +1,32 @@
+.caja {
+    background-color: brown;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16x 32px;
+    background-color: rgb(84, 10, 153);
+    color: white;
+}
+
+.links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+
+}
+
+.cta {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}

@@ -1,0 +1,8 @@
+un evento es una acción o suceso que ocurre en un sistema y que puede ser detectado
+ por el programa. Los eventos permiten que el software reaccione a lo que hace el 
+ usuario o a cambios en el entorno.
+
+Ejemplo:
+document.getElementById("miBoton").addEventListener("click", function() {
+    alert("¡Has hecho clic en el botón!");
+});

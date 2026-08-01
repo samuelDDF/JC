@@ -1,0 +1,11 @@
+Una condición en programación es una instrucción que permite tomar decisiones 
+dentro de un programa. Básicamente, el programa evalúa si una afirmación es 
+verdadera o falsa y, según el resultado, ejecuta un bloque de código u otro.
+
+Ejemplo:
+edad = 20
+
+if edad >= 18:
+    print("Eres mayor de edad.")
+else:
+    print("Eres menor de edad.")

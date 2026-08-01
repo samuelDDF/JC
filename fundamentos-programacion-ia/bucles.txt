@@ -1,0 +1,6 @@
+Un bucle es una estructura que permite repetir un bloque de instrucciones varias
+veces mientras se cumpla una condición o hasta recorrer una colección de datos.
+
+Ejemplo:
+for i in range(1, 6):
+    print("Número:", i)

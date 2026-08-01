@@ -1,0 +1,9 @@
+Un prompt es un mensaje o una orden el cual se le redacta a una IA 
+para que realice una funcion especifica, la respuesta q realiza la 
+IA depende directamente de la estrutura y la claridad del prompt
+
+Ejemplo:
+Mal redactado: Haz algo de programación.
+Buena redaccion: Escribe un programa en Python que lea un archivo CSV con datos de estudiantes 
+                 (nombre, edad, nota) y muestre la lista ordenada por nota de mayor a menor. 
+                 Incluye comentarios en el código para explicar cada paso.
