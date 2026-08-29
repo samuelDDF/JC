@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Mi Portafolio</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+    </nav>
+    <div class="correo">correo@ejemplo.com</div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <h1>¡Hola! Soy Samuel D’moya</h1>
+    <p>Estudiante de ingeniería de sistemas y futuro joven creaTiva</p>
+    <a href="#contacto" class="btn-rojo">¡Contáctame!</a>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre">
+    <h2>Sobre mí</h2>
+    <div class="sobre-contenido">
+      <p>Relájemonos un café juntos de contarle poco de mis más estudios y cómo es la universidad.</p>
+      <img src="imagenes/mural.jpeg" alt="Imagen mural" class="mural">
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades">
+    <h2>Mis Habilidades</h2>
+    <div class="skill">
+      <span>HTML5</span>
+      <div class="barra"><div class="progreso" data-width="90%"></div></div>
+    </div>
+    <div class="skill">
+      <span>CSS3</span>
+      <div class="barra"><div class="progreso" data-width="85%"></div></div>
+    </div>
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="barra"><div class="progreso" data-width="80%"></div></div>
+    </div>
+    <div class="skill">
+      <span>Responsive Design</span>
+      <div class="barra"><div class="progreso" data-width="95%"></div></div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos">
+    <h2>Mis Proyectos</h2>
+    <div class="card">
+      <h3>Sitio Web Corporativo</h3>
+      <p>Un sitio moderno y responsive para una empresa local.</p>
+    </div>
+    <div class="card">
+      <h3>Aplicación Web Interactiva</h3>
+      <p>App para gestionar tareas diarias con interactividad.</p>
+    </div>
+    <div class="card">
+      <h3>Landing Page Creativa</h3>
+      <p>Página con animaciones avanzadas y efectos parallax.</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contáctame</h2>
+    <form id="form-contacto">
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Mi Portafolio. Todos los derechos reservados.</p>
+    <div class="social">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
