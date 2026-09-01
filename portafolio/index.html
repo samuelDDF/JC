@@ -3,101 +3,208 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
+  <meta name="description" content="Portafolio personal de Samuel D’moya, estudiante de ingeniería de sistemas.">
+  <title>Samuel D’moya | Portafolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">Mi Portafolio</div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre">Sobre mí</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <button class="menu-toggle">☰</button>
-    </nav>
-    <div class="correo">correo@ejemplo.com</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio" aria-label="Ir al inicio">Samuel<span>.</span></a>
+
+      <nav class="navbar" aria-label="Navegación principal">
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-menu"
+          aria-label="Abrir menú"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul id="main-menu" class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre">Sobre mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a class="header-email" href="mailto:samueldemoya@gmail.com">samueldemoya@gmail.com</a>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <section id="inicio" class="hero">
-    <h1>¡Hola! Soy Samuel D’moya</h1>
-    <p>Estudiante de ingeniería de sistemas y futuro joven creaTiva</p>
-    <a href="#contacto" class="btn-rojo">¡Contáctame!</a>
-  </section>
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Estudiante de Ingeniería de Sistemas</p>
+        <p> Futuro Joven creaTIvo</p>
+        <h1>¡Hola! Soy <span>Samuel D’moya</span></h1>
+        <p class="hero-description">
+          Exploro el desarrollo web y la tecnología para convertir ideas en experiencias digitales funcionales y atractivas.
+        </p>
+        <a href="#contacto" class="button button-primary">¡Contáctame!</a>
+      </div>
+    </section>
 
-  <!-- Sobre mí -->
-  <section id="sobre">
-    <h2>Sobre mí</h2>
-    <div class="sobre-contenido">
-      <p>Relájemonos un café juntos de contarle poco de mis más estudios y cómo es la universidad.</p>
-      <img src="imagenes/mural.jpeg" alt="Imagen mural" class="mural">
-    </div>
-  </section>
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Conóceme</p>
+          <h2>Sobre mí</h2>
+        </div>
 
-  <!-- Habilidades -->
-  <section id="habilidades">
-    <h2>Mis Habilidades</h2>
-    <div class="skill">
-      <span>HTML5</span>
-      <div class="barra"><div class="progreso" data-width="90%"></div></div>
-    </div>
-    <div class="skill">
-      <span>CSS3</span>
-      <div class="barra"><div class="progreso" data-width="85%"></div></div>
-    </div>
-    <div class="skill">
-      <span>JavaScript</span>
-      <div class="barra"><div class="progreso" data-width="80%"></div></div>
-    </div>
-    <div class="skill">
-      <span>Responsive Design</span>
-      <div class="barra"><div class="progreso" data-width="95%"></div></div>
-    </div>
-  </section>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Relájemonos con un café mientras te cuento un poco sobre mis estudios,
+              mi experiencia universitaria y mi camino en el mundo de la tecnología.
+            </p>
+            <p>
+              Me interesa seguir aprendiendo, crear proyectos útiles y mejorar
+              constantemente mis habilidades como desarrollador.
+            </p>
+          </div>
 
-  <!-- Proyectos -->
-  <section id="proyectos">
-    <h2>Mis Proyectos</h2>
-    <div class="card">
-      <h3>Sitio Web Corporativo</h3>
-      <p>Un sitio moderno y responsive para una empresa local.</p>
-    </div>
-    <div class="card">
-      <h3>Aplicación Web Interactiva</h3>
-      <p>App para gestionar tareas diarias con interactividad.</p>
-    </div>
-    <div class="card">
-      <h3>Landing Page Creativa</h3>
-      <p>Página con animaciones avanzadas y efectos parallax.</p>
-    </div>
-  </section>
+          <div class="about-image">
+            <img src="imagenes/mural.jpeg" alt="Mural artístico" class="mural" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contacto -->
-  <section id="contacto">
-    <h2>Contáctame</h2>
-    <form id="form-contacto">
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar Mensaje</button>
-    </form>
-  </section>
+    <section id="habilidades" class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Tecnologías</p>
+          <h2>Mis habilidades</h2>
+        </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Mi Portafolio. Todos los derechos reservados.</p>
-    <div class="social">
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">Twitter</a>
+        <div class="skills-list">
+          <div class="skill">
+            <div class="skill-header">
+              <span>HTML</span>
+              <span>85%</span>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-label="HTML" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="progress progress-html" data-width="85%"></span>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span>CSS</span>
+              <span>80%</span>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-label="CSS" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <span class="progress progress-css" data-width="80%"></span>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span>JavaScript</span>
+              <span>75%</span>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-label="JavaScript" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <span class="progress progress-js" data-width="75%"></span>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span>Responsive Design</span>
+              <span>80%</span>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-label="Responsive Design" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              <span class="progress progress-responsive" data-width="80%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Trabajo</p>
+          <h2>Mis proyectos</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <span class="project-number">01</span>
+            <h3>Vacio</h3>
+            <p>Proximamente</p>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number">02</span>
+            <h3>Vacio</h3>
+            <p>Proximamente</p>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number">03</span>
+            <h3>Vacio</h3>
+            <p>Proximamente</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section-contact">
+      <div class="container contact-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Hablemos</p>
+          <h2>Contáctame</h2>
+          <p>¿Tienes una idea o proyecto? Escríbeme y conversemos.</p>
+        </div>
+
+        <form id="form-contacto" class="contact-form">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+          </div>
+
+          <button class="button button-primary" type="submit">Enviar mensaje</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Mi Portafolio. Todos los derechos reservados.</p>
+
+      <div class="social" aria-label="Redes sociales">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
